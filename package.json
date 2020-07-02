@@ -1,0 +1,26 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test PORT=3300 && mocha 'test/**/*.test.js' --exit",
+    "dev": "nodemon server/index.js",
+    "cov": "export NODE_ENV=test PORT=3300 && nyc mocha 'test/**/*.test.js' --exit"
+  },
+  "keywords": [],
+  "author": "fuchao.zheng <zhengfuchao2008@126.com> (https://github.com/fuchao2012)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "power-assert": "^1.6.1",
+    "supertest": "^4.0.2"
+  }
+}
